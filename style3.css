@@ -149,17 +149,49 @@ a {
   background-color: #4f1974;
   padding: 10px 20px;
   border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease;
   
-  /* Positioning the link at the bottom center */
   position: fixed;
-  bottom: 20px; /* Distance from the bottom */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for exact center alignment */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  animation: floatAround 6s infinite ease-in-out;
 }
+
 
 a:hover {
   background-color: #400d41;
   transform: scale(1.1) translateX(-50%);
 }
 
+@keyframes gentlePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.text1 h2 {
+  animation: fadeBounce 1.5s ease-out forwards, gentlePulse 2s ease-in-out 1.5s infinite;
+}
+
+@keyframes floatAround {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-100px, 50px);
+  }
+  50% {
+    transform: translate(150px, -40px);
+  }
+  75% {
+    transform: translate(-80px, -80px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
