@@ -195,3 +195,19 @@ a:hover {
     transform: translate(0, 0);
   }
 }
+
+.confetti:nth-child(4n) { background-color: #f06292; }  /* pink */
+.confetti:nth-child(4n+1) { background-color: #ba68c8; }  /* purple */
+.confetti:nth-child(4n+2) { background-color: #64b5f6; }  /* blue */
+.confetti:nth-child(4n+3) { background-color: #81c784; }  /* green */
+
+.balloon:nth-child(1) { background: radial-gradient(circle at 30% 30%, #ff66b2, #c2185b); } /* pink */
+.balloon:nth-child(2) { background: radial-gradient(circle at 30% 30%, #ffd54f, #fbc02d); } /* yellow */
+.balloon:nth-child(3) { background: radial-gradient(circle at 30% 30%, #81d4fa, #0288d1); } /* blue */
+.balloon:nth-child(4) { background: radial-gradient(circle at 30% 30%, #aed581, #7cb342); } /* green */
+.balloon:nth-child(5) { background: radial-gradient(circle at 30% 30%, #ff8a65, #e64a19); } /* orange */
+.balloon:nth-child(6) { background: radial-gradient(circle at 30% 30%, #9575cd, #512da8); } /* violet */
+.balloon:nth-child(7) { background: radial-gradient(circle at 30% 30%, #f48fb1, #ad1457); } /* rose */
+.balloon:nth-child(8) { background: radial-gradient(circle at 30% 30%, #4dd0e1, #0097a7); } /* aqua */
+.balloon:nth-child(9) { background: radial-gradient(circle at 30% 30%, #ffd180, #ff6d00); } /* peach */
+.balloon:nth-child(10) { background: radial-gradient(circle at 30% 30%, #c5e1a5, #8bc34a); } /* light green */
